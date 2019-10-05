@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace form_submission.Models
 {
-    public class User
-    {
+ public class User
+      {
 //--------------------------------------
       [Required]
       [MinLength(4)]
@@ -34,5 +34,5 @@ namespace form_submission.Models
       [Display(Name = "Hey what is youre pasword ?")]
       public string Password {get;set;}
 
-    }
+      }
 }

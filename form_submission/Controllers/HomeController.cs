@@ -13,6 +13,7 @@ namespace form_submission.Controllers
         // ---------------------------------------------------------------------
         // Home
         // ---------------------------------------------------------------------
+        [HttpGet("")]
         public IActionResult Index()
         {
             return View("index");
@@ -20,9 +21,12 @@ namespace form_submission.Controllers
         // ---------------------------------------------------------------------
         // 
         // ---------------------------------------------------------------------
-        public IActionResult Privacy()
+        public IActionResult Show(User user)
         {
-            return View();
+            System.Console.WriteLine("we got here in SHOW");
+            if(ModelState.IsValid)
+                return RedirectToAction("Privacy");
+            return View("Index",user);
         }
         // ---------------------------------------------------------------------
         // 
