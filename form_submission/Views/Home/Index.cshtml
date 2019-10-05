@@ -1,0 +1,23 @@
+﻿@model User
+<h1>Enter Your Information</h1>
+
+<form asp-action="" asp-controller="Home" method="post">
+
+<span asp-validation-for="FirstName"></span>
+<label asp-for="FirstName"></label>
+<input asp-for="FirstName">
+
+<span asp-validation-for="LastName"></span><br>
+<label asp-for="LastName"></label>
+<input asp-for="LastName">
+
+<span asp-validation-for="Age"></span><br>
+<label asp-for="Age"></label>
+<input asp-for="Age">
+
+<span asp-asp-validation-for="Email"></span>
+<label asp-for="Email"></label>
+<input asp-for="Password">
+p
+
+</form>
