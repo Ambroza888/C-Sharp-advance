@@ -1,0 +1,33 @@
+﻿@model Survey
+<form asp-action="Result" asp-controller="Home" method="post">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <span asp-validation-for="Name"></span><br>
+    <label asp-for="Name"></label>
+    <input asp-for="Name">
+
+    <span asp-validation-for="Location"></span><br>
+    <label asp-for="Location"></label>
+    <select asp-for="Location">
+        <option value="San Jose">San Jose</option>
+        <option value="Seattle">Seattle</option>
+        <option value="New York">New York</option>
+    </select>
+    <span asp-validation-for="Language"></span><br>
+    <label asp-for="Language"></label>
+    <select asp-for="Language">
+        <option value="C#">C#</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+    </select>
+    <span asp-validation-for="Comment"></span><br>
+    <label asp-for="Comment"></label>
+    <textarea asp-for="Comment" cols="30" rows="5"></textarea><br>
+    <input type="submit" value="Submit">
+
+
+
+
+</form>
