@@ -1,0 +1,6 @@
+﻿<h1>Here are the awesome Quotes!</h1>
+@foreach(var i in ViewBag.all)
+{
+  <h4>@i["quote"]</h4>
+  <p>-@i["name"] at @i["created_at"]</p>
+}
