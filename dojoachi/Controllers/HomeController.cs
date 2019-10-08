@@ -147,9 +147,6 @@ namespace dojoachi.Controllers
                 string mess = "Sorry you don't have Enought Meals";
                 HttpContext.Session.SetString("Message",mess);
                 }
-            // int? yo = HttpContext.Session.GetInt32("Energy");
-            // yo = yo+1;
-            // HttpContext.Session.SetInt32("Energy", (int)yo);
 
             return RedirectToAction("Index");
         }
@@ -223,22 +220,6 @@ namespace dojoachi.Controllers
                 HttpContext.Session.SetString("Message",tmessage);
             }
         }
-        //if (Energy > 4)
-        //     {
-        //         if (rand.Next(1,5) == 1)
-        //         {
-        //             Energy -= 5;
-        //             Message = $"Sorry the gocci didn't like this play";
-        //         }
-        //         else
-        //         {
-        //             Energy -=5;
-        //             int num = rand.Next(5,11);
-        //             Happiness += num;
-        //             Message = $"Gocchi lost 5 Energy but gained {num} Happiness";
-        //         }
-        //     }
-        //     else{ Message = "Sorry you don't have Enought Energy";}
         return RedirectToAction("Index");
     }
     [HttpGet("Restart")]
