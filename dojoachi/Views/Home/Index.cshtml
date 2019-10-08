@@ -1,8 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<div class="row">
+    <p class="col">Fullness @ViewBag.Fullness</p>
+    <p class="col">Happiness @ViewBag.Happiness</p>
+    <p class="col">Meals @ViewBag.Meals</p>
+    <p class="col">Energy @ViewBag.Energy</p>
+</div>
+    <h1>@ViewBag.Message</h1>
+<div class="row">
+    <button><a href="Feed">Feed</a></button>
+    <button><a href="Work">Work</a></button>
+    <button><a href="Sleep">Sleep</a></button>
+    <button><a href="Play">Play</a></button>
+    <button  id="restart"><a href="Restart">Restart</a></button>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
